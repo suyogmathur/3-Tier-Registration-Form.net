@@ -1,0 +1,163 @@
+/*Reset css */
+body{ 
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px; background:#Red;
+
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+/*Reset css end here*/
+
+.page
+{
+    width:495px; margin:100px auto;	background:#FFF; border:solid 1px #666; overflow:hidden;
+}
+
+.header
+{
+    background:url(../images/loginBg.jpg) repeat-x; width:504px;
+}
+
+.header h3 { line-height:60px; background:url(../images/loginIcon.png) 0 50% no-repeat; padding: 3px 25px 0px 90px; color:white; margin:0px;  font-size:18px; }
+
+
+
+.detailSection
+{
+    background:url(../images/loginBg.jpg) repeat-x; width:496px;
+}
+
+.detailSection h3{line-height:60px; background:url(../images/loginIcon.png) 0 50% no-repeat; padding: 3px 25px 0px 90px; color:white; margin:0px;  font-size:18px;}
+
+
+
+.content
+{
+    float:left; border-radius:5px; background:none;	padding:25px 57px 5px 90px;
+}
+
+
+.detail
+{
+    float:left;	 background:none; padding:30px 0px 0px 0px; width:495px;
+}
+
+
+.user {	float:left;	margin:10px 0px 0px 0px; width:300px; border:solid 1px #d5d5d5; border-radius:5px; padding:15px 0px; background:#efefef; }
+.user_img { float:left; padding:0px 6px 0px 10px; }
+.user_img img { width:14px; height:16px; }
+.user_input { float:left; }
+.user_input input { width:230px; height:16px; font-size:14px; border:none; background:#efefef; }
+
+.pass {	float:left;	margin:15px 0px 0px 0px; width:300px; border:solid 1px #d5d5d5; border-radius:5px; padding:15px 0px; background-color:#efefef; }
+.pass_img { float:left; padding:0px 6px 0px 10px; }
+.pass_img img { width:14px; height:16px; }
+.pass_input { float:left; }
+.pass_input input { width:230px; height:16px;  font-size:14px; border:none; background-color:#efefef; }
+
+.buttons { float:left; width:345px; padding:15px 0px; }
+.buttons1 { float:left; width:447px; padding:10px 27px 20px 27px;  }
+.buttons2 { float:left; padding: 30px 0; width:1000px; }
+.btn_sub { float:left; padding-left:52px; }
+.btn_sub1 { float:left; padding-left:142px;}
+.btn_sub1 input { width:100px; height:50px; background-color:#8bb628; border:solid 1px #759d20; border-radius:5px; color:White; }
+.btn_sub input { width:100px; height:50px; background-color:#8bb628; border:solid 1px #759d20; border-radius:5px; color:White; }
+.btn_can { float:left; margin-left:25px;  padding:0px; }
+.btn_can input { width:100px; height:50px; background-color:#8bb628; border:solid 1px #759d20; border-radius:5px; color:White; }
+.btn_sub2 { float:left; padding-left:380px;}
+.btn_sub2 input { width:100px; height:50px; background-color:#8bb628; border:solid 1px #759d20; border-radius:5px; color:White; }
+.btn_can2 { float:left; margin-left:25px;  padding:0px; }
+.btn_can2 input { width:100px; height:50px; background-color:#8bb628; border:solid 1px #759d20; border-radius:5px; color:White; }
+
+
+
+.details { float:left;	margin:0px 0px 0px 0px; width:486px; padding:0px 0px;  }
+.info { float:left; font-family:Arial, Helvetica, sans-serif; font-size:16px; width:150px; text-align:right; padding:10px 0px; color:#666; }
+.info_input { float:left; border:none; width:316px; padding:10px 10px;  }
+.forminput1 { width:200px; font-size:16px;  padding:0px 0px 0px 5px }
+.forminput2 { width:200px; font-size:16px; background-color:yellow; border:solid 1px red; padding:0px 0px 0px 5px }
+
+.radio_input { float:left; border:none; width:330px; padding:12px 0px; }
+.radio_input input { width:30px; font-size:16px; border:none; }
+
+.input { float:left; }
+
+/*Salary Slip*/
+.salaryPage
+{
+    width:1000px; margin:100px auto; margin-top:20px; background:#FFF; border:solid 1px #666; overflow:hidden;
+}
+
+.salarySection
+{
+    background:url(../images/loginBg.jpg) repeat-x; width:1000px;
+}
+
+.salarySection h3{line-height:60px; background:url(../images/loginIcon.png) 1% 50% no-repeat; padding: 3px 25px 0px 90px; color:white; margin:0px;  font-size:18px;}
+
+
+.headerContent
+{
+    float:left; background:none; width:1000px;	
+}
+
+
+.company{ width:1000px; }
+.logo { float:left; width:470px; }
+.logo img { float:right; width:194px; height:64px; }
+.logoName { float:left; width:530px; font-size:20px; margin-top: 10px; }
+.logoName p { font-size:11px; }
+.paySlip { float:left; width:1000px; }
+.paySlip h3 { font-size:16px; text-align:center; }
+.dateIndex { float:left; padding-left:10px; }
+.employeBlock { float:left; width:979px;  border:solid 1px #000; margin:10px 10px 5px 10px; }
+.employeBlock1 { float:left;  padding-left: 10px; width: 470px; border-right: 1px solid #000000; font-size:12px; font-weight:bold;  }
+.employeBlock2 { float:left; width: 488px; font-size:12px; font-weight:bold;  }
+
+.employeeCode { float:left; }
+.employeeCode ul { padding:0px 0px 0px 10px; margin:0px; }
+.employeeCode li { line-height: 20px; margin:0px; padding:0px;  }
+
+.accountNumber { float:right; padding-right: 10px; }
+.accountNumber ul { float:left; margin:0px; padding:0px; }
+.accountNumber li { line-height: 20px; margin:0px; padding:0px; }
+.accountNumber li label { float:left; margin:0px; padding:0px; }
+
+
+.earningAmount { float:left; width:979px;  border:solid 1px #000; border-top:none; margin:-5px 10px 0px 10px; }
+.totalEarning { float:left; padding-left: 10px; width:470px; border-right: 1px solid #000000; font-size:12px; }
+.netPay { float:left; width:480px; font-size:12px; }
+
+
+
+/*mukesh css*/
+.salaryIndexPage{float:left; width:1000px;
+
+
+
