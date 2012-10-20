@@ -156,62 +156,64 @@
                         <%-- <input type="text" id="txtfname" class="forminput1" value="" onfocus="changetoyellow(this.id);"
                         onblur="backtoorig(this.id);" />--%>
                         <asp:TextBox ID="txtfname" CssClass="forminput1" runat="server"></asp:TextBox>
-                       
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" 
-                            ControlToValidate="txtfname" ErrorMessage="RequiredFieldValidator" 
-                            ondatabinding="btnsubmit_Click"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator12" Font-Bold="true" ForeColor="#CC0000"
+                            runat="server" Text="*" ControlToValidate="txtfname" ErrorMessage="Enter Your First Name"></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         Last Name :</div>
                     <div class="info_input">
                         <asp:TextBox ID="txtlname" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" EnableClientScript="true"
-                            SetFocusOnError="true" runat="server" ControlToValidate="txtlname" Text="*" ErrorMessage="Enter Your Last Name"></asp:RequiredFieldValidator>
+                            SetFocusOnError="true" runat="server" Font-Bold="true" ForeColor="#CC0000" ControlToValidate="txtlname"
+                            Text="*" ErrorMessage="Enter Your Last Name"></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         Address :</div>
                     <div class="info_input">
                         <asp:TextBox ID="txtaddress" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" EnableClientScript="true"
-                            SetFocusOnError="true" runat="server" ControlToValidate="txtaddress" Text="*"
-                            ErrorMessage="Enter Your Address"></asp:RequiredFieldValidator>
+                            SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtaddress"
+                            Text="*" ErrorMessage="Enter Your Address"></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         Phone No. :</div>
                     <div class="info_input">
                         <asp:TextBox ID="txtphone" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" EnableClientScript="true"
-                            SetFocusOnError="true" runat="server" ControlToValidate="txtphone" Text="*" ErrorMessage="Enter Your Phone No."></asp:RequiredFieldValidator>
+                            SetFocusOnError="true" runat="server" Font-Bold="true" ForeColor="#CC0000" ControlToValidate="txtphone"
+                            Text="*" ErrorMessage="Enter Your Phone No."></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         Mobile No. :</div>
                     <div class="info_input">
                         <asp:TextBox ID="txtmobile" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" EnableClientScript="true"
-                            SetFocusOnError="true" runat="server" ControlToValidate="txtmobile" Text="*"
-                            ErrorMessage="Enter Your  Mobile No."></asp:RequiredFieldValidator>
+                            SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtmobile"
+                            Text="*" ErrorMessage="Enter Your  Mobile No."></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         Bank Account No. :</div>
                     <div class="info_input">
                         <asp:TextBox ID="txtbankaccountno" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" EnableClientScript="true"
-                            SetFocusOnError="true" runat="server" ControlToValidate="txtbankaccountno" Text="*"
-                            ErrorMessage="Enter Your Bank Account No."></asp:RequiredFieldValidator>
+                            SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtbankaccountno"
+                            Text="*" ErrorMessage="Enter Your Bank Account No."></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         PAN No. :</div>
                     <div class="info_input">
                         <asp:TextBox ID="txtpan" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" EnableClientScript="true"
-                            SetFocusOnError="true" runat="server" ControlToValidate="txtpan" Text="*" ErrorMessage="Enter Your  PAN No."></asp:RequiredFieldValidator>
+                            SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtpan"
+                            Text="*" ErrorMessage="Enter Your  PAN No."></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         Email ID :</div>
                     <div class="info_input">
                         <asp:TextBox ID="txtemail" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" EnableClientScript="true"
-                            SetFocusOnError="true" runat="server" ControlToValidate="txtemail" Text="*" ErrorMessage="Enter Your Email Id"></asp:RequiredFieldValidator>
+                            SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtemail"
+                            Text="*" ErrorMessage="Enter Your Email Id"></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         Gender :</div>
@@ -220,37 +222,37 @@
                             <asp:ListItem Text="MALE" Value="1"></asp:ListItem>
                             <asp:ListItem Text="FEMALE" Value="2"></asp:ListItem>
                         </asp:RadioButtonList>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9"  ValidationGroup="a" EnableClientScript="true"
-                            SetFocusOnError="true" runat="server" ControlToValidate="radiosex" Text="*" ErrorMessage="Select Your Gender"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" EnableClientScript="true"
+                            SetFocusOnError="true" runat="server" ControlToValidate="radiosex" Text="*" Font-Bold="true"
+                            ForeColor="#CC0000" ErrorMessage="Select Your Gender"></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         Current Location :</div>
                     <div class="info_input">
                         <asp:TextBox ID="txtcurrlocation" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator11" EnableClientScript="true"
-                            SetFocusOnError="true"  ValidationGroup="a" runat="server" ControlToValidate="txtcurrlocation" Text="*"
-                            ErrorMessage="Enter Your Current Location"></asp:RequiredFieldValidator>
+                            SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtcurrlocation"
+                            Text="*" ErrorMessage="Enter Your Current Location"></asp:RequiredFieldValidator>
                     </div>
                     <div class="info">
                         Nationality :</div>
                     <div class="info_input">
                         <asp:TextBox ID="txtnation" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator10" EnableClientScript="true"
-                            SetFocusOnError="true"  ValidationGroup="a" runat="server" ControlToValidate="txtnation" Text="*"
-                            ErrorMessage="Enter Your Nation"></asp:RequiredFieldValidator>
+                            SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtnation"
+                            Text="*" ErrorMessage="Enter Your Nation"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="buttons1">
                     <div class="btn_sub1">
-                        <asp:Button ID="btnsubmit" runat="server" OnClientClick="return checkfield();" Text="Submit"
-                            OnClick="btnsubmit_Click" />
+                        <asp:Button ID="btnsubmit" runat="server" Text="Submit" OnClick="btnsubmit_Click" />
                     </div>
                     <div class="btn_can">
                         <asp:Button ID="btnreset" runat="server" Text="Reset" OnClientClick="return cancel();"
                             OnClick="btnreset_Click" />
                     </div>
-                   <%-- <asp:ValidationSummary ID="ValidationSummary1" ValidationGroup="a" ShowMessageBox="true" EnableClientScript="true"
-                        ShowSummary="false" runat="server" />--%>
+                    <asp:ValidationSummary ID="ValidationSummary1" ShowMessageBox="true" EnableClientScript="true"
+                        ShowSummary="false" runat="server" />
                 </div>
             </div>
         </div>
