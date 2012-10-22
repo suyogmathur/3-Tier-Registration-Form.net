@@ -158,6 +158,8 @@
                         <asp:TextBox ID="txtfname" CssClass="forminput1" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator12" Font-Bold="true" ForeColor="#CC0000"
                             runat="server" Text="*" ControlToValidate="txtfname" ErrorMessage="Enter Your First Name"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="txtfname"
+                            runat="server" ErrorMessage="Enter Only Alphabets" Text="*" ValidationExpression="[a-zA-Z]+"></asp:RegularExpressionValidator>
                     </div>
                     <div class="info">
                         Last Name :</div>
@@ -166,6 +168,8 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" EnableClientScript="true"
                             SetFocusOnError="true" runat="server" Font-Bold="true" ForeColor="#CC0000" ControlToValidate="txtlname"
                             Text="*" ErrorMessage="Enter Your Last Name"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" Text="*"
+                            ValidationExpression="[a-zA-Z]+" ControlToValidate="txtlname" ErrorMessage="Enter Only Alphabets"></asp:RegularExpressionValidator>
                     </div>
                     <div class="info">
                         Address :</div>
@@ -174,6 +178,8 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" EnableClientScript="true"
                             SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtaddress"
                             Text="*" ErrorMessage="Enter Your Address"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" Text="*"
+                            ValidationExpression="[a-zA-Z]+" ControlToValidate="txtaddress" ErrorMessage="Enter Only Alphabets"></asp:RegularExpressionValidator>
                     </div>
                     <div class="info">
                         Phone No. :</div>
@@ -182,6 +188,8 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" EnableClientScript="true"
                             SetFocusOnError="true" runat="server" Font-Bold="true" ForeColor="#CC0000" ControlToValidate="txtphone"
                             Text="*" ErrorMessage="Enter Your Phone No."></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" Text="*"
+                            ValidationExpression="^[0-9]\d{2,4}-\d{6,8}$" ControlToValidate="txtphone" ErrorMessage="Enter Valid Phone Number"></asp:RegularExpressionValidator>
                     </div>
                     <div class="info">
                         Mobile No. :</div>
@@ -190,6 +198,8 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" EnableClientScript="true"
                             SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtmobile"
                             Text="*" ErrorMessage="Enter Your  Mobile No."></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" Text="*"
+                            ValidationExpression="^9\d{9}$" ControlToValidate="txtmobile" ErrorMessage="Enter Valid Mobile Number"></asp:RegularExpressionValidator>
                     </div>
                     <div class="info">
                         Bank Account No. :</div>
@@ -198,6 +208,9 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" EnableClientScript="true"
                             SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtbankaccountno"
                             Text="*" ErrorMessage="Enter Your Bank Account No."></asp:RequiredFieldValidator>
+                        <asp:RangeValidator ID="RangeValidator1" ControlToValidate="txtbankaccountno" Text="*"
+                            runat="server" MinimumValue="5" EnableClientScript="false" Type="Integer" MaximumValue="10"
+                            ErrorMessage="Enter Valid Bank Account Number"></asp:RangeValidator>
                     </div>
                     <div class="info">
                         PAN No. :</div>
@@ -206,6 +219,8 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" EnableClientScript="true"
                             SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtpan"
                             Text="*" ErrorMessage="Enter Your  PAN No."></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator8" ControlToValidate="txtpan"
+                            runat="server" ErrorMessage="Only Numbers allowed" Text="*" ValidationExpression="\d+"></asp:RegularExpressionValidator>
                     </div>
                     <div class="info">
                         Email ID :</div>
@@ -214,6 +229,8 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" EnableClientScript="true"
                             SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtemail"
                             Text="*" ErrorMessage="Enter Your Email Id"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="regexEmailValid" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                            ControlToValidate="txtemail" Text="*" ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
                     </div>
                     <div class="info">
                         Gender :</div>
@@ -233,6 +250,8 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator11" EnableClientScript="true"
                             SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtcurrlocation"
                             Text="*" ErrorMessage="Enter Your Current Location"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" Text="*"
+                            ValidationExpression="[a-zA-Z]+" ControlToValidate="txtcurrlocation" ErrorMessage="Enter Only Alphabets"></asp:RegularExpressionValidator>
                     </div>
                     <div class="info">
                         Nationality :</div>
@@ -241,6 +260,8 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator10" EnableClientScript="true"
                             SetFocusOnError="true" Font-Bold="true" ForeColor="#CC0000" runat="server" ControlToValidate="txtnation"
                             Text="*" ErrorMessage="Enter Your Nation"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" Text="*"
+                            ValidationExpression="[a-zA-Z]+" ControlToValidate="txtnation" ErrorMessage="Enter Only Alphabets"></asp:RegularExpressionValidator>
                     </div>
                 </div>
                 <div class="buttons1">

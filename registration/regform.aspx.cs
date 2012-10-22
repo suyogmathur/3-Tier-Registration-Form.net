@@ -15,7 +15,7 @@ public partial class regform : System.Web.UI.Page
     {
         panregform.Visible = false;
         panusergrid.Visible = true;
-        getuserinfo();
+        //getuserinfo();
     }
 
 
