@@ -32,7 +32,6 @@ public partial class regform : System.Web.UI.Page
         objbll._nationality = txtnation.Text;
         objbll._pan_no = txtpan.Text;
         objbll._phone = txtphone.Text;
-
         objbll._gender = int.Parse(radiosex.SelectedValue.ToString());
         regformdal2 objdal = new regformdal2();
         int Output = objdal.settask(objbll);
@@ -64,14 +63,13 @@ public partial class regform : System.Web.UI.Page
         txtemail.Text = string.Empty;
         radiosex.SelectedIndex = -1;
     }
-
+    
 
 
     protected void griduserinfor_RowCancelingEdit1(object sender, GridViewCancelEditEventArgs e)
     {
         griduserinfor.EditIndex = -1;
         getuserinfo();
-       
     }
 
     protected void griduserinfor_RowDeleting(object sender, GridViewDeleteEventArgs e)
@@ -82,7 +80,7 @@ public partial class regform : System.Web.UI.Page
     {
         griduserinfor.EditIndex = e.NewEditIndex;
         getuserinfo();
-      
+
     }
 
     protected void griduserinfor_RowUpdating(object sender, GridViewUpdateEventArgs e)
@@ -93,9 +91,9 @@ public partial class regform : System.Web.UI.Page
     {
         griduserinfor.PageIndex = e.NewPageIndex;
         getuserinfo();
-       
+
     }
-   
+
     protected void addnewuser_Click(object sender, EventArgs e)
     {
         panregform.Visible = true;
